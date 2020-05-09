@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="import" href="imports.html">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/vendor/jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/vendor/slider.js"></script>
+    <script>
+    if(navigator.userAgent.toLowerCase().indexOf('chrome') <= -1){
+      alert("THIS WEBSITE IS BEST VIEWED IN CHROME.");
+    }
+        jQuery(document).ready(function ($) {
+            var options  = {
+                $AutoPlay:true,
+                $Duration:2000,
+                $Delay:60,
+                $Cols:15,
+                $SlideOut:true,
+                $FlyDirection:8,
+                $Formation:$JssorSlideshowFormations$.$FormationStraight,
+                $Easing:$JssorEasing$.$EaseOutJump,$Round:{$Top:1.5},
+                $FillMode: 0,
+                $AutoPlayInterval: 50000, 
+            };
+
+            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+        });
+    </script>
+<title>Home | FSMUN</title>
+
+</head>
+
+<body>
+
+<div id="contentIndex">
+
+    <div id="control" style="width:100%;"></div>
+    <div id="slider1_container" style="position:relative;width:100%;text-align:center;">
+        
+        <!-- Slides Container -->
+        <div u="slides" class="slides" style="cursor: move;  width: 700px;height:500px; display:table-cell;overflow: hidden;background-color:black;">
+            <div><div class="sliderItem thirty" style="background-color:#0094ff !important"><span>Dates: 28th and 29th November 2015</span><span style="font-size:20px"><br>Date of submission for <a style="color:white;" href="https://drive.google.com/open?id=1if4LjSSXwpT8inyMAwK7a94TXjaKC3osZpEBE3PkY-w" target="_blank">position papers</a>: 20th November 2015</span></div></div>
+            <div><div class="sliderItem" style="background-color:#fff !important; background-image:url('img/poster.png'); background-size:contain; background-position:center;background-repeat:no-repeat"></div></div>
+            <div><div class="sliderItem thirty" style="background-color:#C40000 !important"><span>Venue: Fountainhead School, Surat, Gujarat</span></div></div>
+            <div><div class="sliderItem thirty" id="countdown2" style="background-color:#0094ff !important"></div></div>
+            <div><div class="sliderItem thirty" style="background-color:#C40000 !important"><span>For news and updates, <a href="https://twitter.com/fskmun" style="color:white !important; text-decoration:underline !important" target="_blank">follow</a> us on twitter or <a href="https://www.facebook.com/pages/FSMUN-Fountainhead-School-Model-United-Nations/703296336427825" style="color:white !important; text-decoration:underline !important" target="_blank">like</a> us on facebook.</span></div></div>
+            <div><div class="sliderItem" style="background-image:url('img/FSMUN1.1.jpg'); background-position:center; background-repeat:no-repeat;background-size:contain;background-color:white !important">FSMUN 1.0 HIGHLIGHTS</div></div>
+            <div><div class="sliderItem" style="background-image:url('img/FSMUN1.2.jpg'); background-position:center; background-repeat:no-repeat;background-size:contain;background-color:white !important">FSMUN 1.0 HIGHLIGHTS</div></div>
+            <div><div class="sliderItem" style="background-image:url('img/FSMUN1.3.jpg'); background-position:center; background-repeat:no-repeat;background-size:contain;background-color:white !important">FSMUN 1.0 HIGHLIGHTS</div></div>
+            <div><div class="sliderItem" style="background-image:url('img/FSMUN1.4.jpg'); background-position:center; background-repeat:no-repeat;background-size:contain;background-color:white !important">FSMUN 1.0 HIGHLIGHTS</div></div>
+            <div><div class="sliderItem" style="background-image:url('img/FSMUN1.5.jpg'); background-position:center; background-repeat:no-repeat;background-size:contain;background-color:white !important">FSMUN 1.0 HIGHLIGHTS</div></div>
+            <div><div class="sliderItem" style="background-color:black !important; padding-top:50px !important;"><iframe width="85%" height="85%" src="http://www.youtube.com/embed/TII4wYycoog" frameborder="0" allowfullscreen></iframe></div></div>
+        </div>
+    </div>
+    <br><br><br>   
+
+</div>
+
+
+
+
+</body>
+
+</html>

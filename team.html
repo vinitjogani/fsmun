@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="import" href="imports.html">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/vendor/jquery.js"></script>
+<script src="js/app.js"></script>
+<title>Team | FSMUN</title>
+
+<style>
+  #team{
+    text-align:left;
+  }
+  #team .member{
+    display:inline-block;
+    width:350px;
+    height:350px;
+    margin:10px;
+  }
+  #team .member .picture{
+    display:inline-block;
+    width:350px;
+    height:350px;
+    background-size:cover;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.6);
+    position:absolute;
+    z-index:1;
+  }
+  #team .member .description{
+    display:inline-block;
+    width:350px;
+    height:350px;
+    position:absolute;
+    z-index:2;
+    padding:20px;
+    box-sizing:border-box;
+    background-color:rgba(0,0,0,0.3);
+    text-align:justify;
+    color:#e3e3e3;
+    font-size:16px;
+  }
+  #team .member .description h1{
+    font-size:20px;
+    margin:5px;
+    margin-left:0px;
+  }
+  #team .member .description h2{
+    font-size:18px;
+    margin:3px;
+    margin-left:0px;
+  }
+  #team .member:hover .picture{
+    -webkit-filter:blur(20px);
+    filter:blur(20px);
+  }
+</style>
+</head>
+    
+
+<body>
+  <div id="content">
+    <h1>Meet our team</h1>
+    <div id="team">
+      <div class="member">
+        <div class="picture" style="background-image:url('img/aashna.jpg')"></div>
+        <div class="description">
+          <h1>Aashna Jain</h1>
+          <h2>Secretary General</h2>
+          Aashna suffers from a serious case of wanderlust and enjoys heated debates and books in whose pages she can get lost in. Aashna is a Potterhead and wholeheartedly subscribes to the motto 'Wit beyond measure is man's greatest treasure'. With her passion for Model UNs and her determination towards making FSMUN 2.0 a success, Aashna hopes that everyone enjoys the event as much as she has enjoyed preparing for it. 
+          </div>
+      </div>
+      <div class="member">
+        <div class="picture" style="background-image:url('img/maharsh.jpg')"></div>
+        <div class="description">
+          <h1>Maharsh Benday</h1>
+          <h2>Director General</h2>
+          Maharsh is an avid reader and a peoples person. He really enjoys organizing events and being 'in control'. His amiable attitude makes him a very approachable person and contributes to him being a good leader. As a Bollywood junkie, he likes to add a touch of drama to everything. He strives to accept his flaws, although a bit hesitantly, and tries to work on them. He hopes that FSMUN 2.0 is an experience that is cherished by himself and everyone associated with the prestigious event.
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    $(document).ready(function(){
+      $(".description").fadeOut();
+      $(".member").hover(function(){
+        $(this).children(".description").fadeIn(100);
+      }, function(){
+        $(this).children(".description").fadeOut(100);
+      })
+    })
+  </script>
+</body>
+
+</html>

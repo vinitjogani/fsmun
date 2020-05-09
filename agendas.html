@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="import" href="imports.html">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/vendor/jquery.js"></script>
+<script src="js/app.js"></script>
+<title>Agendas</title>
+</head>
+    
+
+<body>
+
+    
+<div id="content">
+  
+    <div class="committees">
+        <div class="committee">
+          <div class="img" style="background-image:url('img/UNSC.png')"></div>
+          <div class="hovercard" onclick="window.open('https://drive.google.com/open?id=0B3hP6flBTwbBVllvNlUtaGpYNFk')"> STUDY GUIDE </div>
+        </div>
+        <div class="committee">
+          <div class="img" style="background-image:url('img/DISEC.png')"></div>
+          <div class="hovercard" onclick="window.open('https://drive.google.com/open?id=0B3hP6flBTwbBdlhvQTdMSzFob2s')"> STUDY GUIDE </div>
+        </div>
+        <div class="committee">
+          <div class="img" style="background-image:url('img/UNODC.png')"></div>
+          <div class="hovercard" onclick="window.open('https://drive.google.com/open?id=0B3hP6flBTwbBazRmSTNVeTFORGM')"> STUDY GUIDE </div>
+        </div>
+        <div class="committee">
+          <div class="img" style="background-image:url('img/HRC.png')"></div>
+          <div class="hovercard" onclick="window.open('https://drive.google.com/open?id=0B3hP6flBTwbBenJ4NEt6OGphN3M')"> STUDY GUIDE </div>
+        </div>
+        <div class="committee">
+          <div class="img" style="background-image:url('img/WHO.png')"></div>
+          <div class="hovercard" onclick="window.open('https://drive.google.com/open?id=0B3hP6flBTwbBRXpRaUVQbmVSWDQ')"> STUDY GUIDE </div>
+        </div>
+        <div class="committee">
+          <div class="img" style="background-image:url('img/ECOSOC.png')"></div>
+          <div class="hovercard" onclick="window.open('https://drive.google.com/open?id=0B3hP6flBTwbBZk9acUF6dzg1SEk')"> STUDY GUIDE </div>
+        </div>
+    </div<br>
+</div>
+
+<style>
+  .committees{
+    text-align:center;
+  }
+  .committees .img{
+    position:absolute;
+  }
+   .hovercard{
+    position:absolute;
+    background-color:rgba(0,0,0,0.8);
+    display:none;
+    cursor:pointer;
+    font-size:30px;
+    text-align:center;
+    color:white;
+    box-sizing:border-box;
+  }
+  @media (max-width:975px){
+    .committees .img{
+      width:80vw;
+      height:30vw;
+    }
+    .hovercard{
+      padding-top:calc(15vw - 15px);
+      width:80vw;
+      height:30vw;
+    }
+  }
+  @media (min-width:975px){
+    .committees .img{
+      width:784px;
+      height:323px;
+    }
+    .hovercard{
+      padding-top:calc(162px - 15px);
+      width:784px;
+      height:323px;
+    }
+  }
+  .committee{
+    display:inline-block;
+    width:80vw;
+    max-width:784px;
+    max-height:323px;
+    height:30vw;
+    margin-bottom:15px;
+  }
+</style>
+<script>
+  $(document).ready(function(){
+    $(".committee").hover(function(){
+      $(this).children("div.hovercard").fadeIn(100);
+    }, function(){
+      $(this).children("div.hovercard").fadeOut(100);
+    });
+  });
+</script>
+
+
+</body>
+
+</html>

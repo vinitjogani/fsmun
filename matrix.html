@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="import" href="imports.html">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/vendor/jquery.js"></script>
+<script src="js/app.js"></script>
+<title>CountryMatrix</title>
+</head>
+    
+
+<body>
+<style>
+  iframe#matrix{
+    width:100%;
+    border:none;
+    height:1225px;
+    overflow-y:hidden;
+  }
+</style>
+
+<script>
+  $(document).ready(function(){
+    var contentHeight = document.getElementById("matrix").contentWindow.document.body.scrollHeight;
+    $("iframe#matrix").height(contentHeight);
+    console.log(contentHeight)
+  })
+</script>
+    
+<div id="content">
+  <iframe id="matrix" style="border: 0;padding-bottom:50px;" src="https://drive.google.com/file/d/0B3hP6flBTwbBdVBJb2VVOUFZQk0/preview" scrolling="no"></iframe>
+</div>
+
+    <footer style="bottom:0px;width:100%;position:fixed;font-size:7.5px;color:black !important; background-color:white !important; text-align:center;">Fountainheadschool - Model United Nations 2015. Website developed by Vinit Jogani.</footer>
+    
+</body>
+
+</html>
